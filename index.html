@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Intertextual References in the Almanacks of Mary Moody Emerson: Visualization for Close and Distant Reading</title>
+  <link rel="stylesheet" type="text/css" href="viz.css" />
+</head>
+<body>
+  <div class="header">
+    <h1 id="title">Intertextual References in the Almanacks of Mary Moody Emerson: 
+      <br />Visualization for Close and Distant Reading</h1>
+    <div class="controls" role="form">
+      <fieldset class="control">
+        <legend>Update visualization on:</legend>
+        <label for="click-control">Click </label>
+        <input type="radio" id="click-control" name="upmethod" value="click" checked="checked" />
+        <label for="mouseover-control">Mouseover </label>
+        <input type="radio" id="mouseover-control" name="upmethod" value="mouseover" />
+      </fieldset>
+    </div>
+    <p id="info">This visualization was produced as part of the Intertextual Networks project, working with data from 
+      the <span class="italic">Almanacks of Mary Moody Emerson: A Scholarly Digital Edition</span>, an NEH 
+      <span class="italic">We the People</span> designee and recipient of two NEH Scholarly Edition Grants that is 
+      edited by Noelle A. Baker and Sandra Harbert Petrulionis. This edition is being published in phases, with 
+      eighteen of a projected forty-eight Almanacks published to date, the data from which populate this visualization. 
+      To read more about the project, discover how the data was prepared, and learn how to navigate the interface, see 
+      <a href="./about.html">here</a>.</p>
+  </div><!--
+  <div class="buttons">
+    <button id="btn-persName" type="button" class="btn-primary">person names</button>
+    <button id="btn-orgName" type="button" class="btn-primary">organization names</button>
+    <button id="btn-placeName" type="button" class="btn-primary">place names</button>
+  </div>-->
+  <div class="container">
+    <div class="col" id="column-left">
+      <h2 id="colL-title" class="col-title">References by Year</h2>
+      <div class="col-content"></div>
+    </div>
+    <div class="col" id="column-center">
+      <h2 id="colC-title" class="col-title">Relationship of Broad Genres to Types of References</h2>
+      <div class="col-content"></div>
+    </div>
+    <div class="col" id="column-right">
+      <h2 id="colR-title" class="col-title">Intertextual References</h2>
+      <div id="list-container" class="col-content">
+        <ol class="list" id="list"></ol>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Based on code by <a href="https://github.com/sarahsoup/wwo" target="_blank">Sarah Campbell and Zheng-yan Yu</a>.</p>
+    <p class="italic">Intertextual Networks has been made possible in part by a major grant from the National Endowment for the Humanities: Exploring the human endeavor. Any views, findings, conclusions, or recommendations expressed in this project, do not necessarily represent those of the National Endowment for the Humanities.</p>
+  </div>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="data.js"></script>
+  <script src="network.js"></script>
+  <script src="list.js"></script>
+  <script src="scatterplot.js"></script>
+</body>
+</html>
