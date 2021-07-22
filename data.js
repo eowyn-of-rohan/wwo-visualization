@@ -2,6 +2,7 @@
 var dispatch = d3.dispatch("dataLoaded",
   "highlight", "highlightgenre", "highlighttype", "unhighlight");
 
+//Create variable meta, which is undefined for now.
 var meta;
 
 drawNetwork();
@@ -13,6 +14,9 @@ function drawNetwork() {
     var totalExcerpts = 0,
         genreGrp = new Map(),
         qTypes = new Map();
+      /* new Map() creates a directory where objects can be assigned to values. 
+      So genreGrp is a Map and qTypes is a Map, and both can contain a set of linked datapoints - a key, 
+      and then other data linked to that specific key. */
     
     meta = data;
     meta['genres'] = new Map();
