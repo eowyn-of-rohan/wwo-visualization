@@ -1,4 +1,5 @@
 /* Set up the list of intertextual gestures. */
+//Based on the original comment above, this is the list on the far right of the display that has the actual references.
 dispatch.on("dataLoaded.list", function(allData){
   var gestures = allData.gestures,
       showMetadata = function(selection) {
